@@ -3,10 +3,13 @@
 use App\Http\Controllers\HomeController;
 use illuminates\Router\Route;
 use illuminates\Sessions\Session;
+use illuminates\FrameworkSettings;
+use illuminates\Locales\Lang;
 
 //Route::get('/', HomeController::class, 'index');
 Route::get('/', function () {
-	return Session::get('locale');
+	FrameworkSettings::setLocale('en');
+	return trans('main.channel');
 });
 
 Route::group(['prefix' => 'site'], function () {

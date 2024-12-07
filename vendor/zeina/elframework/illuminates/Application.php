@@ -45,7 +45,7 @@ class Application
 			new $global();
 		}
 		$this->framework_setting::setLocale(config('app.locale'));
-		include route_path('/web.php');
+		include route_path('web.php');
 	}
 	
 	public function apiRoute(): void

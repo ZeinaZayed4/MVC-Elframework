@@ -1,7 +1,14 @@
 <?php
 
+if (!function_exists('trans')) {
+	function trans(string $trans = null): string|object
+	{
+		return !empty($trans) ? \illuminates\Locales\Lang::get($trans) : new \illuminates\Locales\Lang;
+	}
+}
+
 if (!function_exists('view')) {
-	function view(string $view, null|array $data): mixed
+	function view(string $view, null|array $data = []): mixed
 	{
 		return \illuminates\Views\View::make($view, $data);
 	}

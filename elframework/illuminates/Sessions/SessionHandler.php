@@ -78,6 +78,6 @@ class SessionHandler implements \SessionHandlerInterface
 	 */
 	public function write(string $id, string $data): bool
 	{
-		return file_put_contents($this->save_path . '/' . $this->prefix . '_' . $id, $data);
+		return file_put_contents($this->save_path . '/' . $this->prefix . '_' . $id, $data) !== false;
 	}
 }
