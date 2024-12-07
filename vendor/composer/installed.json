@@ -1,0 +1,41 @@
+{
+    "packages": [
+        {
+            "name": "zeina/elframework",
+            "version": "1.0",
+            "version_normalized": "1.0.0.0",
+            "dist": {
+                "type": "path",
+                "url": "elframework",
+                "reference": "c7ed4777d5881289eab55d3fd9064ab3d7f42a18"
+            },
+            "type": "library",
+            "installation-source": "dist",
+            "autoload": {
+                "psr-4": {
+                    "Elframework\\": "framework/",
+                    "illuminates\\": "illuminates/",
+                    "Contracts\\": "Contracts/"
+                },
+                "files": [
+                    "helpers/elframeworkHelpers.php"
+                ]
+            },
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Zeina"
+                }
+            ],
+            "description": "Framework",
+            "transport-options": {
+                "relative": true
+            },
+            "install-path": "../zeina/elframework"
+        }
+    ],
+    "dev": true,
+    "dev-package-names": []
+}

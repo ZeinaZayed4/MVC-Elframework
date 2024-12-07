@@ -1,0 +1,24 @@
+{
+    "name": "zeina/elframework",
+    "description": "Framework",
+    "type": "library",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Elframework\\": "framework/",
+            "illuminates\\": "illuminates/",
+            "Contracts\\": "Contracts/"
+        },
+        "files": [
+            "helpers/elframeworkHelpers.php"
+        ]
+    },
+    "authors": [
+        {
+            "name": "Zeina"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {},
+    "version": "1.0"
+}
