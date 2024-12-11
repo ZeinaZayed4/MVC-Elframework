@@ -1,9 +1,9 @@
 <?php
 
 if (!function_exists('trans')) {
-	function trans(string $trans = null): string|object
+	function trans(string $trans = null, array|null $attributes  = []): string|object
 	{
-		return !empty($trans) ? \illuminates\Locales\Lang::get($trans) : new \illuminates\Locales\Lang;
+		return !empty($trans) ? \illuminates\Locales\Lang::get($trans, $attributes) : new \illuminates\Locales\Lang;
 	}
 }
 

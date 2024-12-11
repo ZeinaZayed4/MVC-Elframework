@@ -2,13 +2,25 @@
 
 namespace App\Http\Controllers;
 
-class HomeController
+use illuminates\Http\Validations\Validation;
+use illuminates\Logs\Log;
+
+class HomeController extends Controller
 {
+	/**
+	 * @throws Log
+	 */
 	public function index()
 	{
-		$title = 'Title';
-		$content = 'Content Data';
-		return view('index', compact('title', 'content'));
+		$validation =  $this->validate([
+			'user_id' => $_GET['user_id'] ?? '',
+		], [
+			'user_id' =>  'required|integer',
+		], [
+			'user_id' => trans('main.user_id'),
+		]);
+		
+		var_dump($validation->validated());
 	}
 	
 	public function about(): void

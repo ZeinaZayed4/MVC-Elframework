@@ -2,8 +2,8 @@
 
 return [
 	'name' => 'Elframework',
-	'locale' => 'en',
-	'fallback_locale' => 'ar',
+	'locale' => 'ar',
+	'fallback_locale' => 'en',
 	'timezone' => 'Africa/Cairo',
 	'cipher' => 'AES-128-CBC',
 	'key' => 'zeina',
