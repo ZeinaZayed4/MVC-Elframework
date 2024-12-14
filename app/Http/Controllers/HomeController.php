@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use illuminates\Http\Request;
 use illuminates\Http\Validations\Validation;
 use illuminates\Logs\Log;
 
@@ -12,6 +13,10 @@ class HomeController extends Controller
 	 */
 	public function index()
 	{
+//		$random = random_bytes(4);
+//		$bin = bin2hex($random);
+//		echo $bin;
+		exit;
 		$validation =  $this->validate([
 			'user_id' => $_GET['user_id'] ?? '',
 		], [
@@ -19,8 +24,22 @@ class HomeController extends Controller
 		], [
 			'user_id' => trans('main.user_id'),
 		]);
-		
-		var_dump($validation->validated());
+		echo '<pre>';
+		var_dump($validation->failed());
+	}
+	
+	public function data()
+	{
+		return view('data');
+	}
+	
+	public function data_post()
+	{
+		echo '<pre>';
+		var_dump(request());
+//		$file = request()->file('file');
+//		$name = $file->name(time());
+//		return $file->store('my/images');
 	}
 	
 	public function about(): void

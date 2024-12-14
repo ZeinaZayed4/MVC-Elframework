@@ -6,16 +6,17 @@ class Session
 {
 	public function __construct()
 	{
-	
 	}
 	
 	public static function start()
 	{
-		$handler = new SessionHandler(config('session.session_save_path'), config('session.session_prefix'));
-		$handler->gc(config('session.expiration_timeout'));
-		session_set_save_handler($handler, true);
-		session_name(config('session.session_prefix'));
-		session_start();
+		if (session_status() === PHP_SESSION_NONE) {
+			$handler = new SessionHandler(config('session.session_save_path'), config('session.session_prefix'));
+			$handler->gc(config('session.expiration_timeout'));
+			session_set_save_handler($handler, true);
+			session_name(config('session.session_prefix'));
+			session_start();
+		}
 	}
 	
 	/**
@@ -23,7 +24,7 @@ class Session
 	 * @param mixed|null $value
 	 * @return mixed
 	 */
-	public static function make(string $key, mixed $value = null) : mixed
+	public static function make(string $key, mixed $value = null): mixed
 	{
 		static::start();
 		if (!is_null($value)) {
@@ -36,8 +37,11 @@ class Session
 	 * @param string $key
 	 * @return mixed
 	 */
-	public static function get(string $key) : mixed
+	public static function get(string $key): mixed
 	{
+		if (session_status() === PHP_SESSION_NONE) {
+			static::start();
+		}
 		return isset($_SESSION[$key]) ? decrypt($_SESSION[$key]) : $key;
 	}
 	
@@ -45,8 +49,11 @@ class Session
 	 * @param string $key
 	 * @return bool
 	 */
-	public static function has(string $key) : bool
+	public static function has(string $key): bool
 	{
+		if (session_status() === PHP_SESSION_NONE) {
+			static::start();
+		}
 		return isset($_SESSION[$key]);
 	}
 	
@@ -55,8 +62,11 @@ class Session
 	 * @param mixed|null $value
 	 * @return mixed
 	 */
-	public static function flash(string $key, mixed $value = null) : mixed
+	public static function flash(string $key, mixed $value = null): mixed
 	{
+		if (session_status() === PHP_SESSION_NONE) {
+			static::start();
+		}
 		if (!is_null($value)) {
 			$_SESSION[$key] = $value;
 		}
@@ -73,7 +83,7 @@ class Session
 	{
 		static::start();
 		if (isset($_SESSION[$key])) {
-			$_SESSION[$key] = null;
+			unset($_SESSION[$key]);
 		}
 	}
 	

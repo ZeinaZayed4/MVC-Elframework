@@ -2,9 +2,11 @@
 
 namespace illuminates;
 
+use illuminates\Middleware\CSRFToken;
 use illuminates\Router\Route;
 use App\Core;
 use illuminates\Router\Segment;
+use illuminates\Sessions\Session;
 
 class Application
 {
@@ -44,8 +46,19 @@ class Application
 		foreach (Core::$globalWeb as $global) {
 			new $global();
 		}
+		
+		$this->createCSRF();
+		
 		$this->framework_setting::setLocale(config('app.locale'));
 		include route_path('web.php');
+	}
+	
+	public function createCSRF()
+	{
+		if (!Session::has('csrf_token')) {
+			$csrf = CSRFToken::generateCSRFToken();
+			Session::make('csrf_token', $csrf);
+		}
 	}
 	
 	public function apiRoute(): void

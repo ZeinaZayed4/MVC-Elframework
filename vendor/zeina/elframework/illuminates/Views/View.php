@@ -22,13 +22,13 @@ class View
 	 * @param array|null $data
 	 * @return mixed
 	 */
-	public static function make($view, null|array $data): mixed
+	public static function make($view, null|array $data)
 	{
 		if (config('view.cache')) {
 			self::prepare_cache();
 			$cache_file = static::getCacheFilePath($view);
 			if(static::isCacheValid($cache_file)) {
-				return include $cache_file;
+				include $cache_file;
 			} else {
 				$output = static::generateViewOutput($view, $data);
 				file_put_contents(static::getCacheFilePath($view), $output);
@@ -38,7 +38,7 @@ class View
 			$view = str_replace('.', '/', $view);
 			$path = config('view.path');
 			extract($data);
-			return include $path . '/' . $view . '.tpl.php';
+			include $path . '/' . $view . '.tpl.php';
 		}
 	}
 	

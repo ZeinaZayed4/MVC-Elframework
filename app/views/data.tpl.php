@@ -10,11 +10,15 @@
 <div class="container">
 	<div class="row">
 		<div class="col-12">
-			<h1>Elframework Index Page</h1>
+			<h1>Data Page</h1>
+            <form method="post" action="<?= url('send/data') ?>" enctype="multipart/form-data">
+                <input type="text" name="name" value="test" class="form-control">
+                <?= csrf_field() ?>
+                <button type="submit" class="btn btn-success">Send</button>
+            </form>
 		</div>
 	</div>
 </div>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
 </html>
-

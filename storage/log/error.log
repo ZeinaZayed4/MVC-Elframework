@@ -11,3 +11,78 @@
 2024-12-10 16:15:07 - Error There is no validation called in:zeina, hana in C:\xampp\htdocs\MVC\elframework\illuminates\Http\Validations\Validation.php on line 30
 2024-12-10 17:00:02 - Error There is no validation called email in C:\xampp\htdocs\MVC\elframework\illuminates\Http\Validations\Validation.php on line 37
 2024-12-10 17:57:43 - Error There is no validation called exists:users,id in C:\xampp\htdocs\MVC\elframework\illuminates\Http\Validations\Validation.php on line 38
+2024-12-11 11:41:38 - Error This route data not found in C:\xampp\htdocs\MVC\elframework\illuminates\Router\Router.php on line 129
+2024-12-11 11:42:01 - Error This route data not found in C:\xampp\htdocs\MVC\elframework\illuminates\Router\Router.php on line 129
+2024-12-11 11:42:01 - Error This route data not found in C:\xampp\htdocs\MVC\elframework\illuminates\Router\Router.php on line 129
+2024-12-11 11:43:50 - Error This route data not found in C:\xampp\htdocs\MVC\elframework\illuminates\Router\Router.php on line 129
+2024-12-11 11:43:50 - Error This route data not found in C:\xampp\htdocs\MVC\elframework\illuminates\Router\Router.php on line 129
+2024-12-11 12:10:08 - Error This route send/data not found in C:\xampp\htdocs\MVC\elframework\illuminates\Router\Router.php on line 129
+2024-12-11 17:32:28 - Error This route test not found in C:\xampp\htdocs\MVC\elframework\illuminates\Router\Router.php on line 129
+2024-12-11 17:32:34 - Error This route about not found in C:\xampp\htdocs\MVC\elframework\illuminates\Router\Router.php on line 129
+2024-12-11 17:40:27 - Error This route ndex.php not found in C:\xampp\htdocs\MVC\elframework\illuminates\Router\Router.php on line 129
+2024-12-11 17:40:27 - Error This route ndex.php not found in C:\xampp\htdocs\MVC\elframework\illuminates\Router\Router.php on line 129
+2024-12-11 19:17:43 - Error This route data not found in C:\xampp\htdocs\MVC\elframework\illuminates\Router\Router.php on line 129
+2024-12-11 19:22:05 - Error This route data not found in C:\xampp\htdocs\MVC\elframework\illuminates\Router\Router.php on line 129
+2024-12-11 19:22:07 - Error This route data not found in C:\xampp\htdocs\MVC\elframework\illuminates\Router\Router.php on line 129
+2024-12-11 20:18:46 - Error This route send/data not found in C:\xampp\htdocs\MVC\elframework\illuminates\Router\Router.php on line 129
+2024-12-11 20:18:48 - Error This route send/data not found in C:\xampp\htdocs\MVC\elframework\illuminates\Router\Router.php on line 129
+2024-12-11 20:54:43 - Error This route my/images/1733942624.jpeg not found in C:\xampp\htdocs\MVC\elframework\illuminates\Router\Router.php on line 129
+2024-12-11 20:55:00 - Error This route storage/my/images/1733942624.jpeg not found in C:\xampp\htdocs\MVC\elframework\illuminates\Router\Router.php on line 129
+2024-12-11 20:55:15 - Error This route storage/my/images/1733942624.jpeg not found in C:\xampp\htdocs\MVC\elframework\illuminates\Router\Router.php on line 129
+2024-12-11 20:55:16 - Error This route storage/my/images/1733942624.jpeg not found in C:\xampp\htdocs\MVC\elframework\illuminates\Router\Router.php on line 129
+2024-12-11 20:55:43 - Error This route storage/public/my/images/1733942624.jpeg not found in C:\xampp\htdocs\MVC\elframework\illuminates\Router\Router.php on line 129
+2024-12-11 20:55:46 - Error This route storage/public/my/images/1733942624.jpeg not found in C:\xampp\htdocs\MVC\elframework\illuminates\Router\Router.php on line 129
+2024-12-11 20:56:27 - Error This route storage/public/my/images/1733942624.jpeg not found in C:\xampp\htdocs\MVC\elframework\illuminates\Router\Router.php on line 129
+2024-12-11 20:56:28 - Error This route storage/public/my/images/1733942624.jpeg not found in C:\xampp\htdocs\MVC\elframework\illuminates\Router\Router.php on line 129
+2024-12-11 20:56:28 - Error This route storage/public/my/images/1733942624.jpeg not found in C:\xampp\htdocs\MVC\elframework\illuminates\Router\Router.php on line 129
+2024-12-11 20:56:28 - Error This route storage/public/my/images/1733942624.jpeg not found in C:\xampp\htdocs\MVC\elframework\illuminates\Router\Router.php on line 129
+2024-12-11 20:56:30 - Error This route storage/my/images/1733942624.jpeg not found in C:\xampp\htdocs\MVC\elframework\illuminates\Router\Router.php on line 129
+2024-12-11 20:57:03 - Error This route storage/my/images/1733942660.jpeg not found in C:\xampp\htdocs\MVC\elframework\illuminates\Router\Router.php on line 129
+2024-12-11 20:58:21 - Error This route storage/my/images/1733942660.jpeg not found in C:\xampp\htdocs\MVC\elframework\illuminates\Router\Router.php on line 129
+2024-12-11 21:04:29 - Error This route storage/my/images/1733942660.jpeg not found in C:\xampp\htdocs\MVC\elframework\illuminates\Router\Router.php on line 129
+2024-12-11 21:05:17 - Error This route storage/my/images/1733942624.jpeg not found in C:\xampp\htdocs\MVC\elframework\illuminates\Router\Router.php on line 129
+2024-12-11 21:11:24 - Error This route storage/my/images/1733942624.jpeg not found in C:\xampp\htdocs\MVC\elframework\illuminates\Router\Router.php on line 129
+2024-12-11 21:11:31 - Error This route storage/my/images/1733942624.jpeg not found in C:\xampp\htdocs\MVC\elframework\illuminates\Router\Router.php on line 129
+2024-12-11 21:11:36 - Error This route storage/my/images/1733942624.jpeg not found in C:\xampp\htdocs\MVC\elframework\illuminates\Router\Router.php on line 129
+2024-12-11 21:11:36 - Error This route storage/my/images/1733942624.jpeg not found in C:\xampp\htdocs\MVC\elframework\illuminates\Router\Router.php on line 129
+2024-12-11 21:11:36 - Error This route storage/my/images/1733942624.jpeg not found in C:\xampp\htdocs\MVC\elframework\illuminates\Router\Router.php on line 129
+2024-12-11 21:11:45 - Error This route storage/my/images/1733942624.jpeg not found in C:\xampp\htdocs\MVC\elframework\illuminates\Router\Router.php on line 129
+2024-12-11 21:12:23 - Error This route storage/my/images/1733942624.jpeg not found in C:\xampp\htdocs\MVC\elframework\illuminates\Router\Router.php on line 129
+2024-12-11 21:12:26 - Error This route storage/my/images/1733942624.jpeg not found in C:\xampp\htdocs\MVC\elframework\illuminates\Router\Router.php on line 129
+2024-12-11 21:12:27 - Error This route storage/my/images/1733942624.jpeg not found in C:\xampp\htdocs\MVC\elframework\illuminates\Router\Router.php on line 129
+2024-12-11 21:12:32 - Error This route storage/my/images/1733942624.jpeg not found in C:\xampp\htdocs\MVC\elframework\illuminates\Router\Router.php on line 129
+2024-12-11 21:12:36 - Error This route storage/my/images/1733942624.jpeg not found in C:\xampp\htdocs\MVC\elframework\illuminates\Router\Router.php on line 129
+2024-12-11 21:13:25 - Error This route storage/public/my/images/1733942624.jpeg not found in C:\xampp\htdocs\MVC\elframework\illuminates\Router\Router.php on line 129
+2024-12-11 21:13:46 - Error This route storage/public/my/images/1733942624.jpeg not found in C:\xampp\htdocs\MVC\elframework\illuminates\Router\Router.php on line 129
+2024-12-11 21:21:50 - Error This route storage/public/my/images/1733942624.jpeg not found in C:\xampp\htdocs\MVC\elframework\illuminates\Router\Router.php on line 129
+2024-12-11 21:21:51 - Error This route storage/public/my/images/1733942624.jpeg not found in C:\xampp\htdocs\MVC\elframework\illuminates\Router\Router.php on line 129
+2024-12-11 21:21:51 - Error This route storage/public/my/images/1733942624.jpeg not found in C:\xampp\htdocs\MVC\elframework\illuminates\Router\Router.php on line 129
+2024-12-11 21:21:51 - Error This route storage/public/my/images/1733942624.jpeg not found in C:\xampp\htdocs\MVC\elframework\illuminates\Router\Router.php on line 129
+2024-12-11 21:21:52 - Error This route storage/public/my/images/1733942624.jpeg not found in C:\xampp\htdocs\MVC\elframework\illuminates\Router\Router.php on line 129
+2024-12-11 21:21:52 - Error This route storage/public/my/images/1733942624.jpeg not found in C:\xampp\htdocs\MVC\elframework\illuminates\Router\Router.php on line 129
+2024-12-11 21:21:52 - Error This route storage/public/my/images/1733942624.jpeg not found in C:\xampp\htdocs\MVC\elframework\illuminates\Router\Router.php on line 129
+2024-12-11 21:21:52 - Error This route storage/public/my/images/1733942624.jpeg not found in C:\xampp\htdocs\MVC\elframework\illuminates\Router\Router.php on line 129
+2024-12-11 21:21:53 - Error This route storage/public/my/images/1733942624.jpeg not found in C:\xampp\htdocs\MVC\elframework\illuminates\Router\Router.php on line 129
+2024-12-12 10:26:33 - Error This route send/data not found in C:\xampp\htdocs\MVC\elframework\illuminates\Router\Router.php on line 129
+2024-12-12 10:26:52 - Error Invalid CSRF token in C:\xampp\htdocs\MVC\elframework\illuminates\Middleware\CSRFToken.php on line 14
+2024-12-12 10:26:52 - Error This route send/data not found in C:\xampp\htdocs\MVC\elframework\illuminates\Router\Router.php on line 129
+2024-12-12 10:28:42 - Error Invalid CSRF token in C:\xampp\htdocs\MVC\elframework\illuminates\Middleware\CSRFToken.php on line 18
+2024-12-12 10:28:42 - Error This route send/data not found in C:\xampp\htdocs\MVC\elframework\illuminates\Router\Router.php on line 129
+2024-12-12 10:29:09 - Error Invalid CSRF token in C:\xampp\htdocs\MVC\elframework\illuminates\Middleware\CSRFToken.php on line 18
+2024-12-12 10:29:09 - Error This route send/data not found in C:\xampp\htdocs\MVC\elframework\illuminates\Router\Router.php on line 129
+2024-12-12 10:29:38 - Error Invalid CSRF token in C:\xampp\htdocs\MVC\elframework\illuminates\Middleware\CSRFToken.php on line 18
+2024-12-12 10:29:38 - Error This route send/data not found in C:\xampp\htdocs\MVC\elframework\illuminates\Router\Router.php on line 129
+2024-12-12 10:29:38 - Error Invalid CSRF token in C:\xampp\htdocs\MVC\elframework\illuminates\Middleware\CSRFToken.php on line 18
+2024-12-12 10:29:38 - Error This route send/data not found in C:\xampp\htdocs\MVC\elframework\illuminates\Router\Router.php on line 129
+2024-12-12 10:29:39 - Error Invalid CSRF token in C:\xampp\htdocs\MVC\elframework\illuminates\Middleware\CSRFToken.php on line 18
+2024-12-12 10:29:39 - Error This route send/data not found in C:\xampp\htdocs\MVC\elframework\illuminates\Router\Router.php on line 129
+2024-12-12 10:30:12 - Error Invalid CSRF token in C:\xampp\htdocs\MVC\elframework\illuminates\Middleware\CSRFToken.php on line 18
+2024-12-12 10:30:12 - Error This route send/data not found in C:\xampp\htdocs\MVC\elframework\illuminates\Router\Router.php on line 129
+2024-12-12 10:32:45 - Error Invalid CSRF token in C:\xampp\htdocs\MVC\elframework\illuminates\Middleware\CSRFToken.php on line 18
+2024-12-12 10:32:45 - Error This route send/data not found in C:\xampp\htdocs\MVC\elframework\illuminates\Router\Router.php on line 129
+2024-12-12 10:32:48 - Error Invalid CSRF token in C:\xampp\htdocs\MVC\elframework\illuminates\Middleware\CSRFToken.php on line 18
+2024-12-12 10:32:48 - Error This route send/data not found in C:\xampp\htdocs\MVC\elframework\illuminates\Router\Router.php on line 129
+2024-12-12 10:37:38 - Error Invalid CSRF token in C:\xampp\htdocs\MVC\elframework\illuminates\Middleware\CSRFToken.php on line 18
+2024-12-12 10:37:38 - Error This route send/data not found in C:\xampp\htdocs\MVC\elframework\illuminates\Router\Router.php on line 129
+2024-12-14 11:35:28 - Error Invalid CSRF token in C:\xampp\htdocs\MVC\elframework\illuminates\Middleware\CSRFToken.php on line 17
+2024-12-14 11:35:28 - Error This route send/data not found in C:\xampp\htdocs\MVC\elframework\illuminates\Router\Router.php on line 129
