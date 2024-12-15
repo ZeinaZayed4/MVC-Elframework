@@ -88,3 +88,4 @@
 2024-12-14 11:35:28 - Error This route send/data not found in C:\xampp\htdocs\MVC\elframework\illuminates\Router\Router.php on line 129
 2024-12-15 11:03:09 - Error Invalid CSRF token in C:\xampp\htdocs\MVC\elframework\illuminates\Middleware\CSRFToken.php on line 17
 2024-12-15 11:03:09 - Error This route send/data not found in C:\xampp\htdocs\MVC\elframework\illuminates\Router\Router.php on line 129
+2024-12-15 11:23:16 - Error SQLSTATE[HY000] [1045] Access denied for user 'roots'@'localhost' (using password: NO) in C:\xampp\htdocs\MVC\elframework\illuminates\Database\Types\MySQLConnection.php on line 37

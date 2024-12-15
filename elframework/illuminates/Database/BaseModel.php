@@ -5,7 +5,7 @@ namespace illuminates\Database;
 use illuminates\Database\Contracts\DatabaseConnectionInterface;
 use PDO;
 
-class BaseModel
+abstract class BaseModel
 {
 	protected PDO $db;
 	

@@ -3,6 +3,7 @@
 namespace illuminates\Database\Types;
 
 use illuminates\Database\Contracts\DatabaseConnectionInterface;
+use illuminates\Logs\Log;
 use PDO;
 
 class SQLiteConnection implements DatabaseConnectionInterface
@@ -10,13 +11,20 @@ class SQLiteConnection implements DatabaseConnectionInterface
 	private PDO $pdo;
 	protected $path;
 	
+	/**
+	 * @throws Log
+	 */
 	public function __construct()
 	{
 		$config = config('database.drivers');
 		$this->path = $config['sqlite']['path'];
-		$dsn = "sqlite:$this->path";
-		$this->pdo = new PDO($dsn);
-		$this->pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+		try {
+			$dsn = "sqlite:$this->path";
+			$this->pdo = new PDO($dsn);
+			$this->pdo->setAttribute($config['mysql']['ERRMODE'], $config['mysql']['EXCEPTION']);
+		} catch (\Exception $e) {
+			throw new Log($e->getMessage());
+		}
 	}
 	
 	public function getPDO(): PDO

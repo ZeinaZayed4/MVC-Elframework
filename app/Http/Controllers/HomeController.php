@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\User;
 use illuminates\Database\Model;
 use illuminates\Http\Request;
 use illuminates\Http\Validations\Validation;
@@ -9,25 +10,9 @@ use illuminates\Logs\Log;
 
 class HomeController extends Controller
 {
-	/**
-	 * @throws Log
-	 */
 	public function index()
 	{
-//		$random = random_bytes(4);
-//		$bin = bin2hex($random);
-//		echo $bin;
-		var_dump(new Model());
-		exit;
-		$validation =  $this->validate([
-			'user_id' => $_GET['user_id'] ?? '',
-		], [
-			'user_id' =>  'required|integer',
-		], [
-			'user_id' => trans('main.user_id'),
-		]);
-		echo '<pre>';
-		var_dump($validation->failed());
+		var_dump(new User());
 	}
 	
 	public function data()

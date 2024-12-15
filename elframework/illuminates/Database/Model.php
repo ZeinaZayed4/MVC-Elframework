@@ -8,6 +8,7 @@ use illuminates\Logs\Log;
 
 class Model extends BaseModel
 {
+	protected $table;
 	public function __construct()
 	{
 		$config = config('database.driver');
@@ -17,6 +18,10 @@ class Model extends BaseModel
 			parent::__construct(new SQLiteConnection());
 		} else {
 			throw new Log('Database driver not supported');
+		}
+		if ($this->table == null) {
+			$model = explode('\\', strtolower(static::class));
+			$this->table = end($model) . 's';
 		}
 	}
 }
