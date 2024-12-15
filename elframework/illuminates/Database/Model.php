@@ -8,7 +8,8 @@ use illuminates\Logs\Log;
 
 class Model extends BaseModel
 {
-	protected $table;
+	protected string $table;
+	protected array $attributes = [];
 	public function __construct()
 	{
 		$config = config('database.driver');
@@ -23,5 +24,24 @@ class Model extends BaseModel
 			$model = explode('\\', strtolower(static::class));
 			$this->table = end($model) . 's';
 		}
+	}
+	
+	/**
+	 * @param $name
+	 * @return mixed
+	 */
+	public function __get($name): mixed
+	{
+		return $this->attributes[$name] ?? null;
+	}
+	
+	/**
+	 * @param string $name
+	 * @param $value
+	 * @return void
+	 */
+	public function __set(string $name, $value): void
+	{
+		$this->attributes[$name] = $value;
 	}
 }
