@@ -86,3 +86,5 @@
 2024-12-12 10:37:38 - Error This route send/data not found in C:\xampp\htdocs\MVC\elframework\illuminates\Router\Router.php on line 129
 2024-12-14 11:35:28 - Error Invalid CSRF token in C:\xampp\htdocs\MVC\elframework\illuminates\Middleware\CSRFToken.php on line 17
 2024-12-14 11:35:28 - Error This route send/data not found in C:\xampp\htdocs\MVC\elframework\illuminates\Router\Router.php on line 129
+2024-12-15 11:03:09 - Error Invalid CSRF token in C:\xampp\htdocs\MVC\elframework\illuminates\Middleware\CSRFToken.php on line 17
+2024-12-15 11:03:09 - Error This route send/data not found in C:\xampp\htdocs\MVC\elframework\illuminates\Router\Router.php on line 129

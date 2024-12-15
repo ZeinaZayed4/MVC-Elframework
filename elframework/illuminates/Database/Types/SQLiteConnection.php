@@ -12,8 +12,8 @@ class SQLiteConnection implements DatabaseConnectionInterface
 	
 	public function __construct()
 	{
-		$config = config('database.drivers.sqlite');
-		$this->path = $config('path');
+		$config = config('database.drivers');
+		$this->path = $config['sqlite']['path'];
 		$dsn = "sqlite:$this->path";
 		$this->pdo = new PDO($dsn);
 		$this->pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);

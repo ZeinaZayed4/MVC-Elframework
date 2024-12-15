@@ -69,7 +69,7 @@ if (!function_exists('route_path')) {
 }
 
 if (!function_exists('config')) {
-	function config(string $file = null): string
+	function config(string $file = null)
 	{
 		$separator = explode('.', $file);
 		if ((!empty($separator) && count($separator) > 1) && !is_null($file)) {

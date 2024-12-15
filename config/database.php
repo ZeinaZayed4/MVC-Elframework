@@ -1,7 +1,7 @@
 <?php
 
 return [
-	'driver' => 'mysql',
+	'driver' => 'sqlite',
 	'drivers' => [
 		'mysql' => [
 			'engine' => 'mysql',
@@ -10,11 +10,11 @@ return [
 			'password' => '',
 			'port' => '3306',
 			'charset' => 'utf8mb4',
-			'host' => 'http://127.0.0.1',
+			'host' => '127.0.0.1',
 		],
 		'sqlite' => [
 			'engine' => 'sqlite',
-			'path' => base_path('storage/db'),
+			'path' => base_path('storage/db/sqlite.db'),
 		]
 	]
 ];

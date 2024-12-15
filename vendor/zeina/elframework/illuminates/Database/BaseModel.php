@@ -2,9 +2,7 @@
 
 namespace illuminates\Database;
 
-use illuminates\Database\Types\MySQLConnection;
-use illuminates\Database\Types\SQLiteConnection;
-use illuminates\Logs\Log;
+use illuminates\Database\Contracts\DatabaseConnectionInterface;
 use PDO;
 
 class BaseModel
@@ -12,17 +10,9 @@ class BaseModel
 	protected PDO $db;
 	
 	/**
-	 * @throws Log
 	 */
-	public function __construct()
+	public function __construct(DatabaseConnectionInterface $connect)
 	{
-		$config = config('database.driver');
-		if ($config == 'mysql') {
-			$this->db = (new MySQLConnection)->getPDO();
-		} elseif ($config == 'sqlite') {
-			$this->db = (new SQLiteConnection)->getPDO();
-		} else {
-			throw new Log('Database driver not supported');
-		}
+		$this->db = $connect->getPDO();
 	}
 }

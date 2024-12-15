@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use illuminates\Database\Model;
 use illuminates\Http\Request;
 use illuminates\Http\Validations\Validation;
 use illuminates\Logs\Log;
@@ -16,6 +17,7 @@ class HomeController extends Controller
 //		$random = random_bytes(4);
 //		$bin = bin2hex($random);
 //		echo $bin;
+		var_dump(new Model());
 		exit;
 		$validation =  $this->validate([
 			'user_id' => $_GET['user_id'] ?? '',
