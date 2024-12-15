@@ -14,7 +14,7 @@ class HomeController extends Controller
 	{
 		$user = new User();
 //		$user->name = 'Zeina';
-		echo $user->name;
+		var_dump($user->name);
 	}
 	
 	public function data()
