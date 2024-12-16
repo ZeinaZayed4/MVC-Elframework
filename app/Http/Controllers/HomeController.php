@@ -13,8 +13,7 @@ class HomeController extends Controller
 	public function index()
 	{
 		$user = new User();
-//		$user->name = 'Zeina';
-		var_dump($user->name);
+		return $user->find(1);
 	}
 	
 	public function data()

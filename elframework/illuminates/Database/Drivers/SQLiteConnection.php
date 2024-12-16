@@ -1,6 +1,6 @@
 <?php
 
-namespace illuminates\Database\Types;
+namespace illuminates\Database\Drivers;
 
 use illuminates\Database\Contracts\DatabaseConnectionInterface;
 use illuminates\Logs\Log;

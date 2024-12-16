@@ -2,12 +2,16 @@
 
 namespace illuminates\Database;
 
-use illuminates\Database\Types\MySQLConnection;
-use illuminates\Database\Types\SQLiteConnection;
+use illuminates\Database\Drivers\MySQLConnection;
+use illuminates\Database\Drivers\SQLiteConnection;
+use illuminates\Database\Queries\DBConditions;
+use illuminates\Database\Queries\Selector;
 use illuminates\Logs\Log;
 
 class Model extends BaseModel
 {
+	use DBConditions, Selector;
+	
 	/**
 	 * @throws Log
 	 */
