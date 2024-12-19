@@ -11,6 +11,13 @@
 	<div class="row">
 		<div class="col-12">
 			<h1>Elframework Index Page</h1>
+            <?php
+			foreach ($users as $user) {
+                echo $user->name . '<br />';
+                }
+            ?>
+            
+            <?php echo $users->render() ?>
 		</div>
 	</div>
 </div>

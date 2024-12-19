@@ -9,7 +9,7 @@ abstract class BaseModel
 {
 	protected static PDO $db;
 	protected ?string $table = null;
-	protected array $attributes = [];
+	protected static array $attributes = [];
 	
 	/**
 	 * @param DatabaseConnectionInterface $connect
@@ -17,9 +17,6 @@ abstract class BaseModel
 	public function __construct(DatabaseConnectionInterface $connect)
 	{
 		self::$db = $connect->getPDO();
-		if ($this->table == null) {
-			$this->table = strtolower((new \ReflectionClass(static::class))->getShortName()) . 's';
-		}
 	}
 	
 	/**
@@ -36,11 +33,11 @@ abstract class BaseModel
 		self::$attributes = $attributes;
 	}
 	
-	public static function getTable()
-	{
+//	public static function getTable()
+//	{
 //		$class = new self;
 //		return $class->table;
-	}
+//	}
 	
 	/**
 	 * @param $name
@@ -48,7 +45,7 @@ abstract class BaseModel
 	 */
 	public function __get($name): mixed
 	{
-		return $this->attributes[$name] ?? null;
+		return self::$attributes[$name] ?? null;
 	}
 	
 	/**
@@ -58,6 +55,6 @@ abstract class BaseModel
 	 */
 	public function __set(string $name, $value): void
 	{
-		$this->attributes[$name] = $value;
+		self::$attributes[$name] = $value;
 	}
 }

@@ -12,8 +12,18 @@ class HomeController extends Controller
 {
 	public function index()
 	{
-		$user = new User();
-		return $user->find(1);
+		$users = User::paginate(1);
+//		echo $paginate->getTotal() . '<br />';
+//		echo $paginate->getPerPage() . '<br />';
+//		echo $paginate->getCurrentPage() . '<br />';
+//		echo $paginate->hasNextPage() ? 'Yes' : 'No' . '<br />';
+//		echo $paginate->hasPreviousPage() ? 'Yes' : 'No' . '<br />';
+//		return User::where('name', '=', 'zeina')->count();
+//		$users = User::limit(1)->get()->toArray();
+//		foreach ($users as $user) {
+//			echo $user['name'] . '<br />';
+//		};
+		return view('index', ['users' => $users]);
 	}
 	
 	public function data()

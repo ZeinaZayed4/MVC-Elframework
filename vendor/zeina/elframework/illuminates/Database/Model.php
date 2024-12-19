@@ -5,12 +5,12 @@ namespace illuminates\Database;
 use illuminates\Database\Drivers\MySQLConnection;
 use illuminates\Database\Drivers\SQLiteConnection;
 use illuminates\Database\Queries\DBConditions;
-use illuminates\Database\Queries\Selector;
+use illuminates\Database\Queries\DBSelector;
 use illuminates\Logs\Log;
 
 class Model extends BaseModel
 {
-	use DBConditions, Selector;
+	use DBConditions, DBSelector;
 	
 	/**
 	 * @throws Log
@@ -25,5 +25,19 @@ class Model extends BaseModel
 		} else {
 			throw new Log('Database driver not supported');
 		}
+	}
+	
+	public static function getTable()
+	{
+		$class = new static;
+		if ($class->table == null) {
+			$class->table = strtolower((new \ReflectionClass(static::class))->getShortName()) . 's';
+		}
+		return $class->table;
+	}
+	
+	public function toArray()
+	{
+		return (array) static::$attributes;
 	}
 }
